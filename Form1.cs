@@ -44,8 +44,8 @@ namespace EstoqueSimples
                 }
                 else
                 {
-                    linha.DefaultCellStyle.BackColor = Color.Green;
-                    linha.DefaultCellStyle.ForeColor = Color.White;
+                    linha.DefaultCellStyle.BackColor = Color.White;
+                    linha.DefaultCellStyle.ForeColor = Color.Black;
                 }
 
             }

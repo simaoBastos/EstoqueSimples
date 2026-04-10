@@ -36,6 +36,7 @@
             Nome = new DataGridViewTextBoxColumn();
             Quantidade = new DataGridViewTextBoxColumn();
             btnAdicionar = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)numQuantidade).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvEstoque).BeginInit();
             SuspendLayout();
@@ -116,11 +117,22 @@
             btnAdicionar.UseVisualStyleBackColor = true;
             btnAdicionar.Click += btnAdicionar_Click;
             // 
+            // label1
+            // 
+            label1.Font = new Font("Calibri", 20F);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(936, 58);
+            label1.TabIndex = 6;
+            label1.Text = "Cadastrador de Estoque";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(12F, 29F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(960, 522);
+            Controls.Add(label1);
             Controls.Add(btnAdicionar);
             Controls.Add(dgvEstoque);
             Controls.Add(numQuantidade);
@@ -147,5 +159,6 @@
         private Button btnAdicionar;
         private DataGridViewTextBoxColumn Nome;
         private DataGridViewTextBoxColumn Quantidade;
+        private Label label1;
     }
 }
